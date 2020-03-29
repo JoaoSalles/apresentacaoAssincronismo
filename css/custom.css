@@ -6,6 +6,13 @@
   font-size: 32px; 
 }
 
+.github-icon {
+  height: 150px;
+  width: 150px;
+  border: none !important;
+  box-shadow: none !important;
+}
+
 .reveal pre code {
   max-height: 100%;
 }
