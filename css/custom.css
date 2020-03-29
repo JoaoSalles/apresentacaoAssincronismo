@@ -1,0 +1,11 @@
+.section-left-align {
+  text-align: initial;
+}
+
+.small-font {
+  font-size: 32px; 
+}
+
+.reveal pre code {
+  max-height: 100%;
+}

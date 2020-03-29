@@ -24,7 +24,7 @@ module.exports = grunt => {
 		},
 
 		qunit: {
-			files: [ 'test/*.html' ]
+			files: ['test/*.html']
 		},
 
 		uglify: {
@@ -97,7 +97,7 @@ module.exports = grunt => {
 					require: false
 				}
 			},
-			files: [ 'gruntfile.js', 'js/reveal.js' ]
+			files: ['gruntfile.js', 'js/reveal.js']
 		},
 
 		connect: {
@@ -129,7 +129,7 @@ module.exports = grunt => {
 
 		watch: {
 			js: {
-				files: [ 'gruntfile.js', 'js/reveal.js' ],
+				files: ['gruntfile.js', 'js/reveal.js'],
 				tasks: 'js'
 			},
 			theme: {
@@ -142,11 +142,11 @@ module.exports = grunt => {
 				tasks: 'css-themes'
 			},
 			css: {
-				files: [ 'css/reveal.scss' ],
+				files: ['css/reveal.scss'],
 				tasks: 'css-core'
 			},
 			test: {
-				files: [ 'test/*.html' ],
+				files: ['test/*.html'],
 				tasks: 'test'
 			},
 			html: {
@@ -163,27 +163,27 @@ module.exports = grunt => {
 	});
 
 	// Default task
-	grunt.registerTask( 'default', [ 'css', 'js' ] );
+	grunt.registerTask('default', ['css', 'js']);
 
 	// JS task
-	grunt.registerTask( 'js', [ 'jshint', 'uglify', 'qunit' ] );
+	grunt.registerTask('js', ['jshint', 'uglify', 'qunit']);
 
 	// Theme CSS
-	grunt.registerTask( 'css-themes', [ 'sass:themes' ] );
+	grunt.registerTask('css-themes', ['sass:themes']);
 
 	// Core framework CSS
-	grunt.registerTask( 'css-core', [ 'sass:core', 'autoprefixer', 'cssmin' ] );
+	grunt.registerTask('css-core', ['sass:core', 'autoprefixer', 'cssmin']);
 
 	// All CSS
-	grunt.registerTask( 'css', [ 'sass', 'autoprefixer', 'cssmin' ] );
+	grunt.registerTask('css', ['sass', 'autoprefixer', 'cssmin']);
 
 	// Package presentation to archive
-	grunt.registerTask( 'package', [ 'default', 'zip' ] );
+	grunt.registerTask('package', ['default', 'zip']);
 
 	// Serve presentation locally
-	grunt.registerTask( 'serve', [ 'connect', 'watch' ] );
+	grunt.registerTask('serve', ['connect', 'watch']);
 
 	// Run tests
-	grunt.registerTask( 'test', [ 'jshint', 'qunit' ] );
+	grunt.registerTask('test', ['jshint', 'qunit']);
 
 };
