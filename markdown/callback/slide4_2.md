@@ -1,12 +1,14 @@
 <div class="section-left-align">
 <p>- Básico das funções assíncronas do javascript</p>
 
-<p class="fragment">- Cumprem seu papeis apesar dos pontos negativos</p>
+<p class="fragment">- Cumprem seu papel</p>
 
-<p class="fragment">- Mudança de planejamento síncrono para assíncrono</p>
+<p class="fragment">- Possuem vários pontos negativos</p>
 
+<p class="fragment">- Vamos abordar os dois maiores pontos negativos</p>
 </div>
 
 <aside class="notes">
-    A leitura de código assíncrono é complicado, em geral, programos tasks no nosso cérebro sequencialmente primeiro faço A depois B e depois C. Quando acrescentamos assincronicidade fugimos desse padrão.
+    Seriam o conceito básico das funções assíncronas do javascript, elas funcionam como funções que devem ser chamadas quando API terminar sua execução (call back into)
+    sem suporte para timeout, resultados mutaveis
 </aside>

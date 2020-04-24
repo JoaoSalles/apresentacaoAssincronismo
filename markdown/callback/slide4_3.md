@@ -1,4 +1,4 @@
-## Callbacks alinhados
+## Callbacks Hell
 <pre>
     <code class="hljs" data-trim data-line-numbers>
         listen( "click", function handler(evt){
@@ -17,5 +17,5 @@
 </pre>
 
 <aside class="notes">
-    cabeça é o callback hell
+    Quando pensamos em problemas com callbacks aninhados o que vem a cabeça é o famoso callback hel
 </aside>

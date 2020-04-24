@@ -1,15 +1,9 @@
-<pre>
-    <code class="hljs" data-trim data-noescape data-line-numbers>
-var a = 20;
-function bar() {
-    a = a * 2;
-};
+<div>
+<img data-src="../images/modeloConcorrencia.png">
+</div>
 
-function foo() {
-    a = a + 1;
-};
+<aside class="notes">
+    A engine javascript implementa a semântica representada na imagem. Onde Queue é fila de tarefa, nosso event loop, stack é o empilhamento das funções com seus parâmetros e variáveis de escopo e o Heap é a memória
+</aside>
 
-ajax("http://some.url.1", foo );
-ajax("http://some.url.2", bar );
-    </code>
-</pre>
+

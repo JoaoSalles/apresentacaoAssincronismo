@@ -1,14 +1,29 @@
-### Funcionamento
-<div class="section-left-align">
-<p>- Valor futuro</p>
+<pre>
+    <code class="hljs" data-trim data-noescape data-line-numbers>
+function foo(x) {
+    // faz alguma coisa
 
-<p class="fragment">- Eventos de completude</p>
+    return listener;
+}
 
-</div>
+var evt = foo( 42 );
+
+// evt.on( "completion", function(){
+    // executa o proximo passo
+// } );
+
+// evt.on( "failure", function(err){
+    // oops, algo deu errado em `foo(..)`
+// } );
+
+// evento vai ser executado dentro das funções
+bar(evt)
+
+baz(evt)
+
+    </code>
+</pre>
 <aside class="notes">
-A ideia de promise funciona como um ticket que vc recebe quando você faz um pedido em um fast food
-Vc não tem o produto mas ele vai chegar
-
-A ideia seria de uma função que retorna um event
-listener que sera executado por futuras execuções
+Apesar de se comportarem como um evento, o evento de conclusão das promises não são estritamente eventos.
+Para registrarmos um evento de conclusão de promises usamos o then, que registra os eventos de fulfillment e rejection.
 </aside>

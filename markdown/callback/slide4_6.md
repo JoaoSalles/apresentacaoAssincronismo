@@ -1,5 +1,6 @@
 ### Principais problemas
+<div class="section-left-align">
+<p>- Sequenciar um codigo assincrono(callback hell)</p>
 
-#### Sequenciar um codigo assincrono(callback hell)
-
-#### Confiabilidade
+<p>- Confiabilidade</p>
+</div>

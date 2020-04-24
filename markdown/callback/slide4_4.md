@@ -1,3 +1,4 @@
+## Codigo com visão sincrona
 <pre>
     <code class="hljs" data-trim data-line-numbers>
         listen( "click", handler );

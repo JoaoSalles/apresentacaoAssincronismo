@@ -7,7 +7,7 @@ function *foo() {
     console.log( "x:", x );
 }
 
-// construct an iterator `it` to control the generator
+// constroi o iterator `it` para controlar a instância generator
 var it = foo();
 
 // start `foo()` here!

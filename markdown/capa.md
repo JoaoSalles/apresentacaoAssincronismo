@@ -1,3 +1,3 @@
-<h5>Assincronismo no Javascript - De callbacks ate async functions</h5>
+<h5>Evolução das chamadas assincronas no Javascript</h5>
 <br />
 <span>Joao Marcos Costa Salles</span>

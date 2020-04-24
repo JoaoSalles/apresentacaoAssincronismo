@@ -11,7 +11,7 @@
 
 <p>- Não tem acesso ao dom </p>
 
-<p>- Dependencia de valor </p>
+<p>- Dependência de valor </p>
 
 </div>
 <aside class="notes">

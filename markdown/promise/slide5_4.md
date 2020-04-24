@@ -1,29 +1,20 @@
 <pre>
-    <code class="hljs" data-trim data-noescape data-line-numbers>
+   <code class="hljs" data-trim data-noescape data-line-numbers>
 function foo(x) {
-    // faz alguma coisa
-
-    return listener;
+   // faz alguma coisa
+ 
+   // constroe a promise
+   return new Promise( function(resolve,reject){
+       // eventually, call `resolve(..)` or `reject(..)`,
+       // which are the resolution callbacks for
+       // the promise.
+   } );
 }
-
-var evt = foo( 42 );
-
-// evt.on( "completion", function(){
-    // executa o proximo passo
-// } );
-
-// evt.on( "failure", function(err){
-    // oops, algo deu errado em `foo(..)`
-// } );
-
-// evento vai ser executado dentro das funçoes
-bar(evt)
-
-baz(evt)
-
-    </code>
+   </code>
 </pre>
 <aside class="notes">
-Apesar de se comportarem como um evento, o evento de conclusão das promises não são estritamente eventos.
+Foo seria algo nesse sentido, retornaria uma Promise
+que invoca a função resolve caso sucesso ou
+reject caso falha
 Para registrarmos um evento de conclusão de promises usamos o then, que registra os eventos de fulfillment e rejection.
 </aside>
